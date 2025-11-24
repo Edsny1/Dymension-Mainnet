@@ -41,12 +41,13 @@ make install
 ```
 # Version Kontrol
 
-Önce doğru binary'nin kurulup kurulmadığını kontrol edin
-```
+```diff
+# Önce doğru binary'nin kurulup kurulmadığını kontrol edin
 $HOME/go/bin/dymd version
 $HOME/go/bin/dymd version --long | grep commit
+
++ Expected commit: 5bbee2a0c74474bc159bd28bd2f70782e2352dcd
 ```
-# Should be commit 5bbee2a0c74474bc159bd28bd2f70782e2352dcd
 
 # Cosmovisor Dizinini Oluşturun ve İkili Dosyayı Kopyalayın
 ```
