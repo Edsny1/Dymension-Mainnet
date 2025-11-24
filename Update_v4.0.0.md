@@ -26,7 +26,7 @@ source $HOME/.bash_profile
 go version
 ```
 
-# Install New Binary
+# Yeni Binary Yükle
 ```
 cd dymension
 ```
@@ -39,7 +39,7 @@ git checkout v4.0.0
 ```
 make install
 ```
-# Check Version
+# Version Kontrol
 
 Önce doğru binary'nin kurulup kurulmadığını kontrol edin
 ```
@@ -47,7 +47,7 @@ $HOME/go/bin/dymd version
 $HOME/go/bin/dymd version --long | grep commit
 ```
 
-# Make Cosmovisor Directory and Copy Binary
+# Cosmovisor Dizinini Oluşturun ve İkili Dosyayı Kopyalayın
 ```
 mkdir -p $HOME/.dymension/cosmovisor/upgrades/v5/bin
 cp $HOME/go/bin/dymd $HOME/.dymension/cosmovisor/upgrades/v5/bin
@@ -55,8 +55,8 @@ cp $HOME/go/bin/dymd $HOME/.dymension/cosmovisor/upgrades/v5/bin
 
 ### Fast Block Time
 
-- to enable fast block time we need to update `timeout_propose="1.8s"`  and `timeout_commit="500ms"` in `config.toml` . 
-In case your dymension home directory is `$HOME/.dymension` you can use the following snippest:
+- Hızlı blok süresini etkinleştirmek için `config.toml` dosyasında `timeout_propose=“1.8s”`  ve `timeout_commit=“500ms”` değerlerini güncellememiz gerekir.
+Dymension ana dizininiz `$HOME/.dymension` ise, aşağıdaki snippet'i kullanabilirsiniz:
 
 ```
 sed -i -e 's/^timeout_propose *=.*/timeout_propose = "1.8s"/' \
