@@ -46,6 +46,7 @@ make install
 $HOME/go/bin/dymd version
 $HOME/go/bin/dymd version --long | grep commit
 ```
+# Should be commit 5bbee2a0c74474bc159bd28bd2f70782e2352dcd
 
 # Cosmovisor Dizinini Oluşturun ve İkili Dosyayı Kopyalayın
 ```
